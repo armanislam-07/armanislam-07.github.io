@@ -97,6 +97,36 @@ section {
     z-index: 99;
 }
 
+.home-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem; /* space between text and image */
+}
+
+.home-content-left {
+    flex: 1;
+}
+.home-content-left p {
+    font-size: 1.6rem;
+}
+.home-content-left h1 {
+    font-size: 5.12rem; /* same as before */
+}
+.home-content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-content-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem; /* optional rounded corners */
+    border: .2rem solid var(--main-color);
+}
+
+
 .home-content h1 {
     position: relative;
     display: inline-block;
@@ -126,7 +156,11 @@ section {
     background-position: -33rem 0;
 }
 
-.home.show-animate .home-content .text-animate h3 {
+.home-content-left .text-animate h3 {
+    font-size: 3.05rem; /* same as before */
+}
+
+.home.show-animate .home-content-left .text-animate h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
