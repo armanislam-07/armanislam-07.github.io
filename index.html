@@ -133,7 +133,6 @@
             <p class="about-info-inner">
               <!-- content will fetch from  "TODO: js/autoTypingAnimation " -->
             </p>
-            <!-- this is a just demo text  -->
 
             <!-- <span>Hi, this is a demo name</span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius officia ea ut vonsectetur adipisicing elit. Illo voluptatum iste, tempora rem obcaecati omnis delectus sunt, consequuntur, et ut quasi aperiam assumenda! <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex beatae reprehenderit vero maiores dignissimos error vitae, optio inventore explicabo quia officiis magni delectus? -->
@@ -274,14 +273,14 @@
               </div>
             </div>
             <!-- ========== Start portfolio filter========== -->
-             <!-- web applicadtion will be embedded systems | phothsop will be computer archeticture | mobile app will be machine learning -->
+             <!-- Embedded Systems will be embedded systems | phothsop will be computer archeticture | mobile app will be machine learning -->
                 <div class="row">
                   <div class="portfolio-filter">
                     <span class="filter-item outer-shadow active" data-target="all">All</span>
-                    <span class="filter-item" data-target="web-application">Web application</span>
+                    <!-- <span class="filter-item" data-target="embedded-systems">Embedded Systems</span>
                     <span class="filter-item" data-target="photoshop">photoshop</span>
                     <span class="filter-item" data-target="mobile-app">mobile app</span>
-                    <span class="filter-item" data-target="e-commerce">e commerce</span>
+                    <span class="filter-item" data-target="e-commerce">e commerce</span> -->
                   </div>
                 </div>
             <!-- ========== End portfolio filter========== -->
@@ -289,10 +288,10 @@
             <!-- ========== Start portfolio items ========== -->
                 <div class="row portfolio-items">
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
+                  <div class="portfolio-item" data-category="embedded-systems">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-1.png" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png, 
+                        <img src="img/baremetal_drone/photoinprogress.jpg" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png, 
                         img/portfolio/large/project-1/2.png,
                         img/portfolio/large/project-1/3.png,
                         img/portfolio/large/project-1/4.png,
@@ -303,21 +302,20 @@
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
+                      <p class="portfolio-item-title">Baremetal Drone</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
                               <div class="description">
                                 <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
+                                <p> Over the summer of 2025 I worked on a project to create a drone. I had three options, to do this with Arduino, use existing HAL/STM Drivers, or to do the whole project from scratch AKA Baremetal. I decided to do baremetal to get more familarity with how microcontrollers work. All the drivers and code for this project is written by me excped for the linker script.</p>
                               </div>
                               <div class="info">
                                 <h3>Project info</h3>
                                 <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, js</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
+                                  <li>Date - <span>2025 Summer</span></li>
+                                  <li>Tools - <span>C, KiCad, Github, OpenOCD </span></li>
+                                  <li>Web - <span><a href="#" id="link" target="_next">https://github.com/armanislam-07/baremetal_drone</a></span></li>
                                 </ul>
                               </div>
                             </div>
@@ -327,31 +325,38 @@
                   </div>
                   <!-- ========== End portfolio item ========== -->
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
+                  <div class="portfolio-item" data-category="embedded-systems">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-2.png" alt="portfolio" data-screenshots="img/portfolio/large/project-2/1.png, 
-                        img/portfolio/large/project-2/2.png"
+                        <img src="img/Purdue Undergradute Rocket Propulsion Lab/P&ID 3.png" alt="portfolio" data-screenshots="img/Purdue Undergradute Rocket Propulsion Lab/maelstrom_cad.png, img/Purdue Undergradute Rocket Propulsion Lab/P&ID 3.png, img/Purdue Undergradute Rocket Propulsion Lab/maelstrom.png,
+                        img/Purdue Undergradute Rocket Propulsion Lab/P&ID.png"
                         >
 
                         <!-- view project button  -->
-                        <span class="view-project">view project</span>
+                        <span class="view-project">View Project</span>
                       </div>
-                      <p class="portfolio-item-title">wedding couple</p>
+                      <p class="portfolio-item-title">Rocket Monitoring & Control Program</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
                               <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
+                                <h3>Project Brief: </h3>
+                                <!-- what are piping diargrams -> why are they importnat -> context in the project -> what i used to get it downn -> how it connected with the proplusion devcie purpl makes (labjack)  -->
+                                <p>Piping and Instrumentation Diagrams (P&IDs) are detailed schematic representations of fluid systems that illustrate the relationships between piping, valves, sensors, actuators, and control elements. P&IDs are critically important because they act as the source of information for system design and operation when on field. In other words, they allow us to verify valve sequencing, sensor coverage, and safety mechanisms before and during hardware is deployed. <br><br>
+In the context of the Maelstrom project, a 500-lbf kerosene/LOX heat-sink rocket engine, I developed a P&ID-based software program to represent the engine’s propellant feed and control architecture. The diagram captured LOX and kerosene supply lines, pneumatic and solenoid valves, pressure and temperature sensors. This P&ID served as the foundation for integrating sensor acquisition, valve control logic, and system feedback during engine development and testing.
+<br> <br>
+For example, through this application, if the team sees unstable pressure or results that seem abnormal, we can press the emergency shutdown to place the system in a safe state. Or if our test is safe and we follow through, but the test produces unexpected results, we can look at the generated graphs to identify which valve or solenoid could have been the cause for the result. 
+<br> <br>
+The P&ID program was integrated with a LabJack control device, which acted as the interface between the software and the hardware. The LabJack driver handled analog inputs from pressure and temperature sensors and digital outputs to control valves, and I utilized the sensor feedback to monitor system state, validate control logic, and support safe engine operation.
+</p>
                               </div>
                               <div class="info">
                                 <h3>Project info</h3>
                                 <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
+                                  <li>Date - <span>2025 Fall Semester</span></li>
+                                  <li>Client - <span>Purdue Undergraduate Rocket Propulsion Lab</span></li>
+                                  <li>Tools - <span>Python, SQL, LabJack, PyQt, Pandas</span></li>
+                                  <li>Web - <span><a href="#" id="link" target="_next">https://github.com/armanislam-07/Maelstrom_PID</a></span></li>
                                 </ul>
                               </div>
                             </div>
@@ -362,10 +367,10 @@
                   <!-- ========== End portfolio item ========== -->
 
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="e-commerce">
+                  <div class="portfolio-item" data-category="embedded-systems">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-3.png" alt="portfolio" data-screenshots="
+                        <img src="img/baremetal_drone/photoinprogress.jpg" alt="portfolio" data-screenshots="
                         img/portfolio/large/project-3/1.png, 
                         img/portfolio/large/project-3/2.png,
                         img/portfolio/large/project-3/3.png,
@@ -376,7 +381,7 @@
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">wedding couple</p>
+                      <p class="portfolio-item-title">Radar System</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
@@ -385,7 +390,7 @@
                                 <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla illo atque accusantium debitis non necessitatibus laboriosam architecto quas voluptatem? Autem hic in molestias rerum laborum ex ratione voluptatibus impedit aliquam! ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
                               </div>
                               <div class="info">
-                                <h3>product loading page</h3>
+                                <h3></h3>
                                 <ul>
                                   <li>Date - <span>2021</span></li>
                                   <li>Client - <span>xyz</span></li>
@@ -400,16 +405,17 @@
                   </div>
                   <!-- ========== End portfolio item ========== -->
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
+                  <div class="portfolio-item" data-category="embedded-systems">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-4.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-4/1.png">
+                        <img src="img/slayterHIL/top_level.png" alt="portfolio" data-screenshots="
+                        img/slayterHIL/top_level.png, img/slayterHIL/easy_understanding.png, img/slayterHIL/group_pic.jpg, img/slayterHIL/test_node.png, img/slayterHIL/flight_simm_diagrams.jpg">
 
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
+                      <!-- have this be the hardware in the loop system  -->
+                      <p class="portfolio-item-title">Hardware in the Loop System for Drones</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
@@ -420,10 +426,8 @@
                               <div class="info">
                                 <h3>product loading page</h3>
                                 <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
+                                  <li>Date - <span>2025 Fall - Current</span></li>
+                                  <li>Tools - <span>Git, C, Zephyr</span></li>
                                 </ul>
                               </div>
                             </div>
@@ -433,30 +437,32 @@
                   </div>
                   <!-- ========== End portfolio item ========== -->
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
+                  <div class="portfolio-item" data-category="research">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-5.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-5/1.png">
+                        <img src="img/Arizona_State_University/Fuzzing_Background_Image.jpg" alt="portfolio" data-screenshots="
+                        img/Arizona_State_University/Presentation.png">
 
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">fetness & gym</p>
+                      <p class="portfolio-item-title"> ASU Cybersecurity Fuzzing </p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
                               <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
+                                <h3>Research Description: </h3>
+                                <p>During the Summer of 2024, I conducted cybersecurity research at Arizona State University on fuzz testing, a technique used to discover vulnerabilities in computer software and systems. My responsibility was to apply coverage guided fuzzing to identify bugs and potential security flaws in open source applications including FFmpeg, MPV, libexif, Jellyfin Media Server, and Calibre’s.
+<br><br> I worked with multiple input corpuses and fuzzing strategies using AFL++ and Snapchange, leveraging gcov and lcov to analyze code coverage to guide input generation. If I was to find a crash, GDB was to be used for the analysis. Additionally, low-level Linux debugging and application behavior analysis were used to assess exploitability, skills I developed throughout the internship.
+<br><br>At the end of the internship, I presented my findings and learning outcomes in a poster session to fellow interns and PhD researchers.
+under this add a problems section and how i solved them.</p>
                               </div>
                               <div class="info">
-                                <h3>product loading page</h3>
+                                <h3></h3>
                                 <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
+                                  <li>Date - <span>2024 Summer</span></li>
+                                  <li>Tools - <span>C, Rust, Linux, AFL++, Snapchange</span></li>
+                                  <li>Mentor/Manager - <span>Alireza Karimi</span></li>
                                 </ul>
                               </div>
                             </div>
@@ -467,7 +473,7 @@
                   <!-- ========== End portfolio item ========== -->
                   
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
+                  <div class="portfolio-item" data-category="research">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
                         <img src="img/portfolio/thumb/project-6.png" alt="portfolio" data-screenshots="
@@ -479,7 +485,7 @@
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">quiz applicatioon</p>
+                      <p class="portfolio-item-title">Embedded Thermal Sensing utilizing Polymer Composite Printing</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
@@ -514,7 +520,7 @@
                         <!-- view project button  -->
                         <span class="view-project">view project</span>
                       </div>
-                      <p class="portfolio-item-title">quiz applicatioon</p>
+                      <p class="portfolio-item-title">SMART MAT: Self-Sensing Materials and Structures</p>
                       <!-- ========== Start portfolio item details ========== -->
                           <div class="portfolio-item-details">
                             <div class="row">
@@ -539,20 +545,21 @@
                   </div>
                   <!-- ========== End portfolio item ========== -->
                   <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="photoshop">
+                  <!-- <div class="portfolio-item" data-category="photoshop">
                     <div class="portfolio-item-inner outer-shadow">
                       <div class="portfolio-item-image">
                         <img src="img/portfolio/thumb/project-8.png" alt="portfolio" data-screenshots="
                         img/portfolio/large/project-8/1.png,
                         img/portfolio/large/project-8/2.png,
-                        ">
+                        "> -->
 
                         <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
+                        <!-- <span class="view-project">view project</span>
+                      </div> -->
+                      <!-- have this be the hardware in the loop system  -->
+                      <!-- <p class="portfolio-item-title">personal portfolio</p>
                       
-                    </div>
+                    </div> -->
                   </div>
                   <!-- ========== End portfolio item ========== -->
                   
@@ -614,7 +621,7 @@
           <div class="pp-details">
             <div class="pp-details-inner">
               <div class="pp-title">
-                <h2>personal portfolio</h2>
+                <h2>Drone Baremetal Project</h2>
                 <p>Category - <span class="pp-project-category">Embedded Systems</span></p>
               </div>
               <div class="pp-project-details">

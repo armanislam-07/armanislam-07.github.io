@@ -52,7 +52,7 @@ body{
     line-height: 1.5;
     /* overflow: hidden; */
     background-color: var(--bg-black-50);
-    text-transform: capitalize;
+    text-transform: none;
     /* overflow-y: hidden; */
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -566,7 +566,7 @@ img{
     font-weight: 600;
     color: var(--text-black-600);
     padding: 5px 30px;
-    text-transform: capitalize;
+    text-transform: none;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
@@ -604,7 +604,7 @@ img{
 .home-section .home-text p{
     color: var(--text-black-300);
     font-size: 18px;
-    text-transform: capitalize;
+    text-transform: none;
     margin: 0;
 }
 .home-section .home-text #auto-typing-animation p{
@@ -618,7 +618,7 @@ img{
     font-weight: 500;
     color: var(--text-black-600);
     margin: 0%;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .home-section .home-text .btn-1{
@@ -765,7 +765,7 @@ img{
 .about-section .skills .skill-item p{
     font-size: 16px;
     color: var(--text-black-600);
-    text-transform: capitalize;
+    text-transform: none;
     margin: 0 0 10px;
 }
 .about-section .skills .skill-item .progress-bar{
@@ -874,14 +874,14 @@ img{
     color: var(--skin-color);
     display: block;
     margin: 0 0 10px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 .about-section .timeline .timeline-item-inner h3{
     font-size: 20px;
     color: var(--text-black-700);
     font-weight: 600;
     margin: 0 0 5px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 .about-section .timeline .timeline-item-inner h4{
     font-size: 16px;
@@ -1015,7 +1015,7 @@ img{
     cursor: pointer;
     font-weight: 500;
     color: var(--text-black-600);
-    text-transform: capitalize;
+    text-transform: none;
     font-size: 16px;
     transition: all 0.3s ease;
      
@@ -1066,7 +1066,7 @@ img{
 
 .portfolio-section .portfolio-item-image .view-project{
     /* display: none; */
-    text-transform: capitalize;
+    text-transform: none;
     font-size: 16px;
     font-weight: 500;
     color: var(--skin-color);
@@ -1095,7 +1095,7 @@ img{
     font-size: 16px;
     margin: 10px 0 0;
     color: var(--text-black-600);
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .portfolio-section .portfolio-item-details{
@@ -1225,7 +1225,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
     font-weight: 600;
     color: var(--text-black-600);
     margin: 0 0 15px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .portfolio-popup .info{
@@ -1411,7 +1411,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
     font-weight: 600;
     color: var(--text-black-700);
     margin: 10px 0 5px;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all 0.5 ease;
 }
 
