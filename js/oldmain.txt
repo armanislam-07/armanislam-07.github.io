@@ -1,3 +1,68 @@
+/*--------------- Navigation Menu ----------------- */
+(() => {
+    const hamburgerBtn = document.querySelector(".hamburger-btn"),
+        navMenu = document.querySelector(".nav-menu"),
+        closeNavBtn = navMenu.querySelector(".close-nav-menu");
+
+    const showNavMenu = () => {
+        navMenu.classList.toggle("open");
+        fadeOutEffect();
+    };
+
+    const hideNavMenu = () => {
+        navMenu.classList.remove("open");
+        fadeOutEffect();
+        toggleBodyScrolling();
+    };
+
+    const fadeOutEffect = () => {
+        const fadeEffect = document.querySelector(".fade-out-effect");
+        fadeEffect.classList.add("active");
+        setTimeout(() => {
+            fadeEffect.classList.remove("active");
+        }, 300);
+    };
+
+    /* Event Listeners */
+    hamburgerBtn.addEventListener("click", showNavMenu);
+    closeNavBtn.addEventListener("click", hideNavMenu);
+
+    document.addEventListener("click", (event) => {
+        if (event.target.classList.contains("link-item") && event.target.hash !== "") {
+            event.preventDefault();
+            const hash = event.target.hash;
+
+            // Handle section switching
+            document.querySelector(".section.active").classList.add("hide");
+            document.querySelector(".section.active").classList.remove("active");
+            document.querySelector(hash).classList.add("active");
+            document.querySelector(hash).classList.remove("hide");
+
+            // Update active navigation link
+            const activeNavItem = navMenu.querySelector(".active");
+            activeNavItem.classList.add("outer-shadow", "hover-in-shadow");
+            activeNavItem.classList.remove("active", "inner-shadow");
+
+            if (navMenu.classList.contains("open")) {
+                event.target.classList.add("active", "inner-shadow");
+                event.target.classList.remove("outer-shadow", "hover-in-shadow");
+                hideNavMenu();
+            } else {
+                navMenu.querySelectorAll(".link-item").forEach((item) => {
+                    if (hash === item.hash) {
+                        item.classList.add("active", "inner-shadow");
+                        item.classList.remove("outer-shadow", "hover-in-shadow");
+                    }
+                });
+                fadeOutEffect();
+            }
+
+            // Update URL hash
+            window.location.hash = hash;
+        }
+    });
+})();
+
 /*--------------- About Section Tabs ----------------- */
 (() => {
     const aboutSection = document.querySelector(".about-section"),

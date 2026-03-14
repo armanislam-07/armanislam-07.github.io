@@ -1427,6 +1427,9 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
 
 .contact-section .contact-item-inner .contact-p{
     display: block;
+    color: var(--skin-color);
+    text-decoration: none;
+
 }
 
 .contact-section .contact-item-inner .contact-span{
